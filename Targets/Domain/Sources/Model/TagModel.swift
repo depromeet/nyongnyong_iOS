@@ -45,6 +45,7 @@ extension TagModel {
     }
     
     public func create(tagName: String) async throws {
+        
         let requestBody = CreateTagRequest.Body(tagName: tagName)
         
         let uploadTagRequest = CreateTagRequest(
